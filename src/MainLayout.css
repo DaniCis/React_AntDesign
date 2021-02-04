@@ -1,0 +1,125 @@
+  
+/*MAIN LAYOUT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*MEDIA QUERIES*/
+@media (max-width:872px){
+     .navbar .responsive{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+}
+@media(min-width:768px){
+    .trigger{
+        display: block;
+    }
+}
+
+/*GENERAL*/
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px!important;
+    letter-spacing: 0.5px!important;
+}
+.site-layout-header{
+    background-color:white;
+    padding: 0px;
+    line-height: 40px;
+    height: 50px;
+    font-weight: bold;
+}
+.site-layout-content{
+    padding: 10px 24px 0 24px;
+    margin: 0;
+    min-height: 280;
+    background-color: #dbd8d8;
+}
+.site-layout-logo{
+    padding: 12px 20px;
+    width: 13rem;
+}
+
+/*DRAWER*/
+.ant-drawer-content{
+    background-color: #333131;
+}
+.ant-drawer-close{
+    color:white;
+    padding:10px;
+}
+
+/*NAVBAR*/
+.navbar .anticon svg{
+    height: 20px;
+    width: 20px;
+}
+.navbar .i-icon{
+    cursor: pointer;
+}
+.navbar{
+    padding: 5px 35px 0 25px;
+}
+.navbar p{
+    margin-bottom: 0;
+}
+.navbar{
+    display: flex;
+}
+.left, .center,.right{
+    display: inline-block;
+}
+.trigger,.usuario,
+.right p{
+    padding-right: 30px;
+}
+.userIcon{
+    margin-right: 3px;
+}
+.center p{
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 16px;
+}
+.ant-dropdown-menu{
+    -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12);
+}
+
+/*SideBar Menu*/
+aside{
+    flex: 0 0 230px!important; 
+    max-width: 230px!important; 
+    min-width: 230px!important;
+    width: 230px!important;
+}
+.contMenu{
+    width: 30px;
+}
+.site-layout-menu,
+.site-layout-categorias{
+    background-color: #738290;
+    color: white;
+}
+
+
+/*Submenu Largos*/
+.ConfigModulos{
+    color:white;
+    overflow-wrap: break-word;
+    height: 40px;
+    line-height: 20px;
+}
+.contenedorTitulo{
+    display: flex;
+}
+.Icono {
+    padding:6px 5px 0 0; 
+}
+.Titulo{
+    display: inline;
+    padding-top: 10px;
+}
+.TituloLargo{
+    padding-top: 0;
+}
