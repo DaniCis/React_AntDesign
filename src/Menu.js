@@ -4,16 +4,21 @@ import {
 AppstoreOutlined,EyeOutlined,CalculatorOutlined,TeamOutlined,InboxOutlined,
 ShoppingOutlined,UploadOutlined,ShoppingCartOutlined,SafetyOutlined
 } from "@ant-design/icons";
+import {Link} from 'react-router-dom';
+
+import * as AiIcon from 'react-icons/ai';
 
 const { SubMenu } = Menu;
 
-const MenuContenido= () => {
+const MenuContenido= ({showSiderbar}) => { 
+
     return (
-    <Menu className="site-layout-categorias"
-    mode="inline"
-    >
-         <div className="site-layout-logo">
-            <img src="https://confidentefinanciero.com/wp-content/uploads/2019/04/logo-wiam-2018.svg" alt="Logo" />
+    
+    <Menu mode="inline">
+         <div className="">
+            <Link to='#'>
+                <AiIcon.AiOutlineClose onClick={showSiderbar}/>
+            </Link>
         </div> 
         <SubMenu className="menuPrincipal" key="parametros" 
             title={
