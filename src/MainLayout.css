@@ -40,14 +40,8 @@ body{
     padding: 12px 20px;
     width: 13rem;
 }
-
-/*DRAWER*/
-.ant-drawer-content{
-    background-color: #333131;
-}
-.ant-drawer-close{
-    color:white;
-    padding:10px;
+.site-layout-logo img{
+    opacity: 0.8;
 }
 
 /*NAVBAR*/
@@ -88,10 +82,11 @@ body{
 
 /*SideBar Menu*/
 aside{
-    flex: 0 0 230px!important; 
-    max-width: 230px!important; 
-    min-width: 230px!important;
-    width: 230px!important;
+    flex: 0 0 250px!important; 
+    max-width: 250px!important; 
+    min-width: 250px!important;
+    width: 250px!important;
+    height: 100vh!important;
 }
 .contMenu{
     width: 30px;
@@ -101,7 +96,9 @@ aside{
     background-color: #738290;
     color: white;
 }
-
+.pro-sidebar > .pro-sidebar-inner{
+    background-color: #5E4AE3!important;
+}
 
 /*Submenu Largos*/
 .ConfigModulos{
