@@ -1,8 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 import { Menu } from "antd";
 import {
-AppstoreOutlined,EyeOutlined,CalculatorOutlined,TeamOutlined,InboxOutlined,
-ShoppingOutlined,UploadOutlined,ShoppingCartOutlined,SafetyOutlined
+AppstoreOutlined,EyeOutlined,CalculatorOutlined,InboxOutlined,
+ShoppingOutlined,ShoppingCartOutlined
 } from "@ant-design/icons";
 import {Link} from 'react-router-dom';
 
@@ -15,10 +15,13 @@ const MenuContenido= ({showSiderbar}) => {
     return (
     
     <Menu mode="inline">
-         <div className="">
+        <div className="cerrar">
             <Link to='#'>
                 <AiIcon.AiOutlineClose onClick={showSiderbar}/>
             </Link>
+        </div> 
+         <div className="site-layout-logo">
+            <img src="https://confidentefinanciero.com/wp-content/uploads/2019/04/logo-wiam-2018.svg" alt="Logo" />
         </div> 
         <SubMenu className="menuPrincipal" key="parametros" 
             title={
@@ -32,7 +35,7 @@ const MenuContenido= ({showSiderbar}) => {
             </div>} >
             <SubMenu key="parametros-empresa" className="submenu1" title="Empresa">
                 <Menu.Item key="parametros-empresa-datos-empresa"> 
-                    Datos Empresa
+                <Link to="/DatosEmpresa">Datos Empresa</Link>
                 </Menu.Item>
                 <Menu.Item key="parametros-empresa-sucursal">
                     Sucursal
@@ -42,15 +45,15 @@ const MenuContenido= ({showSiderbar}) => {
                 </Menu.Item>
              </SubMenu>
             <SubMenu key="parametros-usuariosypermisos" className="submenu1" title="Usuarios y Permisos" >
-            <Menu.Item key="parametros-usuariosypermisos-usuarios">
-                Usuarios
-            </Menu.Item>
-            <Menu.Item key="parametros-usuariosypermisos-perfiles">
-              Perfiles
-            </Menu.Item>
-            <Menu.Item key="parametros-usuariosypermisos-restringir">
-                 Restringir Transacciones
-            </Menu.Item>
+                <Menu.Item key="parametros-usuariosypermisos-usuarios">
+                    Usuarios
+                </Menu.Item>
+                <Menu.Item key="parametros-usuariosypermisos-perfiles">
+                Perfiles
+                </Menu.Item>
+                <Menu.Item key="parametros-usuariosypermisos-restringir">
+                    Restringir Transacciones
+                </Menu.Item>
             </SubMenu>
         </SubMenu>
         <SubMenu className="menuPrincipal" key="administracion"

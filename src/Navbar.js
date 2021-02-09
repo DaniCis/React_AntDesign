@@ -1,5 +1,5 @@
-import React, {useState,useContext,useEffect } from "react";
-import {Menu,Button,Dropdown,Drawer} from "antd";
+import React, {useState,useEffect } from "react";
+import {Dropdown} from "antd";
 
 import {Link} from 'react-router-dom';
 import * as FaIcon from 'react-icons/fa';
@@ -18,33 +18,16 @@ const NavBar = ({showSiderbar}) => {
       setfechaActual(mesNombres[month] +' '+ date +', '+year);
     },[]);
 
-    const config = (
-        <Menu>
-          <Menu.Item key="0">
-            <a>Opciones</a>
-          </Menu.Item>
-          <Menu.Item key="1">
-            <a>Cambiar Idioma</a>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <a>Cambiar Periodo</a>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <a>Cerrar Sesión</a>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <a type="primary" >Salir</a>
-          </Menu.Item>
-        </Menu>
+    const config = (<p>HOLA</p>
     );
 
     return (
       <nav className="navbar">
         <div  className="left">
-          <div className="trigger left">
-          <Link to="#" >
-        <FaIcon.FaBars onClick={showSiderbar}/>
-      </Link>
+          <div className="menubars left">
+            <Link to="#" >
+              <FaIcon.FaBars onClick={showSiderbar}/>
+            </Link>
           </div>
           <div className="responsive left">
             <p>{fechaActual}</p>

@@ -8,22 +8,32 @@
     }
 }
 @media(min-width:768px){
-    .trigger{
-        display: block;
-    }
     .sidebar{
         position: relative!important;
         left: 0!important;
         transition: 0ms!important;
     }
+    .menubars,.cerrar{
+        display: none!important;
+    }
 }
 .ant-menu{
     background-color: #1a224e!important;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
 }
 .sidebar {
     position:fixed;
     left: -100%;
     transition: 850ms;
+    z-index: 11;
 }
 .sidebar.active {
     left:0; 
