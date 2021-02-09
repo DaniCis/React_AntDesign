@@ -182,7 +182,7 @@ const DatosEmpresa = () => {
                   </Col>
                 </Row>
                 </TabPane>
-
+                <TabPane tab="DATOS2" key="2"></TabPane>
               </Tabs>
             </Form>
           </Card>

@@ -7,6 +7,7 @@ ShoppingOutlined,ShoppingCartOutlined
 import {Link} from 'react-router-dom';
 
 import * as AiIcon from 'react-icons/ai';
+import './Globales.css';
 
 const { SubMenu } = Menu;
 
@@ -14,7 +15,7 @@ const MenuContenido= ({showSiderbar}) => {
 
     return (
     
-    <Menu mode="inline">
+    <Menu mode="inline" className="site-layout-categorias">
         <div className="cerrar">
             <Link to='#'>
                 <AiIcon.AiOutlineClose onClick={showSiderbar}/>

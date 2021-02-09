@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import { Layout} from "antd";
 import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 import './MainLayout.css';
+import './Globales.css';
 import MenuContenido from './Menu';
 import DatosEmpresa from './DatosEmpresa';
 
@@ -25,7 +26,7 @@ const showSiderbar =()=>{
       <div className={sidebar ? 'sidebar active' : 'sidebar' }>
         
         <Sider className="site-layout-menu">
-          <MenuContenido className="site-layout-categorias" showSiderbar={showSiderbar}/>
+          <MenuContenido  showSiderbar={showSiderbar}/>
         </Sider>
         </div>
         <Layout>

@@ -17,9 +17,7 @@
         display: none!important;
     }
 }
-.ant-menu{
-    background-color: #1a224e!important;
-}
+
 .overlay{
     position: absolute;
     top: 0;
@@ -46,7 +44,7 @@ body{
     letter-spacing: 0.5px!important;
 }
 .site-layout-header{
-    background-color:white;
+    background-color: white;
     padding: 0px;
     line-height: 40px;
     height: 50px;
@@ -56,7 +54,7 @@ body{
     padding: 10px 24px 0 24px;
     margin: 0;
     min-height: 280;
-    background-color: #dbd8d8;
+    background-color: #d9d9d9;
 }
 .site-layout-logo{
     padding: 12px 20px;
@@ -105,11 +103,7 @@ aside{
     min-width: 230px!important;
     width: 230px!important;
 }
-.site-layout-menu,
-.site-layout-categorias{
-    background-color: #333131!important;
-    color: white;
-}
+
 .site-layout-categorias .anticon svg{
     height: 20px;
     width: 20px;
@@ -118,8 +112,20 @@ aside{
     height:50px;
     line-height: 25px;
 }
+.sidebar,
+.site-layout-menu,
+.site-layout-categorias{
+    background-color:#2F4858;
+    color: white;
+}
 .menuPrincipal [aria-expanded="true"]{
-    background: rgba(219, 69, 74, 0.88);;
+    background: #05a7bd;
+}
+.ant-menu-submenu > .ant-menu {
+    background-color: #919090;
+}
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right:none;
 }
 li .ant-menu-item {
     padding-left: 28px!important;
@@ -140,9 +146,7 @@ li .ant-menu-item {
     color:white;
     font-weight: bold;
 }
-.ant-menu-submenu > .ant-menu {
-    background-color: #535151;
-}
+
 .ant-menu-submenu-title{
     color:white;
     white-space: normal;
@@ -157,7 +161,7 @@ li .ant-menu-item {
     font-weight: bold;
 }
 .ant-menu-inline .ant-menu-item::after{
-    border-right: 3px solid #ff1836;
+    border-right: 3px solid #ef434a;
 }
 .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after{
     background-image: linear-gradient(to right, #f5f5f5, #f5f5f5)!important;

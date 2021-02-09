@@ -1,0 +1,306 @@
+/*INPUTS*/
+.Input{
+    border: 1px solid #C5CADA!important;
+    box-sizing: border-box!important; 
+    border-radius: 5px!important;
+    height: 35px!important;
+    width: 280px!important;
+}
+.InputLarge{
+    width: 340px!important;
+}
+.InputXS{
+    width: 50px!important;
+}
+.InputSmall{
+    width: 90px!important;
+}
+.InputSm-Md{
+    width:130px!important
+}
+.InputMediano{
+    width:180px!important;
+}
+.TextArea{
+    height:65px!important;
+    border: 1px solid #C5CADA!important;
+    box-sizing: border-box!important; 
+    border-radius: 5px!important;
+}
+.upload{
+    width: 170px!important;
+    border: 1px solid #C5CADA!important;
+    box-sizing: border-box!important; 
+    border-radius: 5px!important;
+    height: 35px!important;
+}
+.ant-select-selector{  
+    height: 35px!important;
+    border: 1px solid #C5CADA!important;
+    box-sizing: border-box!important; 
+    border-radius: 5px!important;
+}
+/*resize tamaños en xs*/
+@media(max-width:576px){
+    .ant-col-xs-24 .sizexs,
+    .ant-col-xs-12 .sizexs{
+        width: 280px!important;
+    }
+}
+@media(max-width:872px){
+    .ant-col-xs-24 .sizeXS,
+    .sizeXS{
+        width: 280px!important;
+    }
+}
+@media(min-width:872px)and (max-width:992px){
+    .ant-col-md-24 .sizeXS{
+        width: 280px!important;
+    }
+}
+
+/*BOTONES*/
+.ContenedorBotones{
+   display: flex; 
+   justify-content: space-between;
+}
+.Btn span{
+    color:white;
+}
+.BtnSmall{
+    width: 90px!important;
+}
+.ant-btn[disabled],
+.Btn{
+    border-radius: 5px;
+    width: 50px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.BtnRegistrar{
+    background-color:#6EAF45;
+}
+.BtnRegistrar:hover, .BtnRegistrar:focus{
+    background-color:#a2e07b;
+    border-color:#79f52d ;
+}
+.BtnModificar{
+    background: #FBAE3B;
+}
+.BtnModificar:hover, .BtnModificar:focus{
+    border-color: #ffd13b;
+    background:#fcc44c;
+}
+.BtnModificar .ant-btn[disabled]{
+    background-color: #dfb459;
+    border-color: #d9d9d9;
+}
+.BtnLimpiar{
+    background: #C1CDD0;
+}
+.BtnLimpiar:hover, .BtnLimpiar:focus{
+    background: #cfdbdf;
+    border-color:#b8cbcf ;
+}
+.BtnImprimir{
+    background: #AA50CA;
+}
+.BtnImprimir:hover,.BtnImprimir:focus{
+    background: #cd8ee4;
+    border-color: #d166f8;
+}
+.BtnEliminar{
+    background: #FD5757;
+}
+.BtnEliminar:hover, .BtnEliminar:focus{
+    background: #fd6d6d;
+    border-color: #fc3f3f;
+}
+.BtnEliminar .ant-btn[disabled]{
+    background-color: #d86161;
+    border-color: #d9d9d9;
+}
+.BtnConsultar{
+    background: #7A96F9;
+}
+.BtnNoShadow{
+    box-shadow: none;
+}
+.BtnConsultar:hover, .BtnConsultar:focus{
+    background:#9db2ff;
+    border-color: #809af7;
+}
+
+@media(max-width:576px){
+    .ant-col-xs-2 .BtnConsultar{
+        top:43px;
+        left: 50px;
+        width: 47px;
+    }
+}
+@media(min-width:1200px){
+    .ant-col-xs-2 .BtnConsultar{
+        right: 25px;
+    }
+}
+@media(min-width:850px) and (max-width:960px){
+    .ant-col-xs-2 .BtnConsultar{
+        left:50px;
+    }
+}
+
+/*Pop confirm*/
+.ant-popover-buttons .ant-btn:hover,
+.ant-popover-buttons .ant-btn:focus{
+    color: #fc7676;
+    background-color: #fff;
+    border-color: #fc7676;
+}/*
+.ant-btn-primary {
+    color: #fff;
+    background-color: #fc7676;
+    border-color: #FD5757;
+}
+.ant-btn-primary:hover{
+    background-color:#FD5757;
+    border-color: #fc7676;
+}*/
+.ant-popover-message > .anticon {
+    position: absolute;
+    top: 8px;
+    color: #fc7676;
+    font-size: 14px;
+}
+
+/*Radio Boton*/
+.ant-radio-group{
+    display: inline-flex;
+}
+.ant-radio-checked .ant-radio-inner{
+    border-color: #8D8D8D;
+}
+.ant-radio-inner::after{
+    background: #8D8D8D;
+}
+
+/*CHECKBOX*/
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #8D8D8D;
+    border-color: #8D8D8D;
+}
+.ant-checkbox .ant-checkbox-checked{
+    height: 16px;
+}
+
+/*ETIQUETAS*/
+.ant-form label{
+    margin: 0;
+    font-size: 14px!important;
+    top: 6px;
+    text-align: left;
+    color:black;
+}
+.ant-form-item-label{
+    display: flex;
+    white-space:normal;
+    height: 44px!important;
+}
+.ant-select-selection-placeholder{
+    padding-top: 5px!important;
+    font-size: 14px!important;
+    color: black!important;
+}
+h4{
+    font-size: 28px;
+}
+h3{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+h3 label{
+    color: #FBAE38!important;
+}
+.ant-col-xs-23{
+    padding-bottom: 10px;
+}
+span,p{
+    color:rgba(0, 0, 0, 0.65);
+}
+
+/*Titulo resultado consulta*/
+@media (min-width: 768px){
+    .ant-col-md-7 {
+        padding-top: 10px;
+    } 
+}
+@media (min-width: 992px){
+    .ant-col-lg-7 {
+        padding-top: 10px;
+    }
+}
+
+
+/*CONTENEDOR PRINCIPAL*/
+.ant-row .ant-form-item{
+    margin-bottom: 15px;
+}
+.ant-card-head{
+    height: 55px!important;
+    margin: 0;
+    border-bottom: none;
+}
+.ant-card-head-title{
+    font-size: 22px;
+    font-weight: normal;
+}
+.ant-card-body {
+    padding: 0 24px 24px 24px;
+}
+.ant-divider-horizontal{
+    margin:15px 0;
+}
+.ant-divider{
+    background: #FBAE3B;
+}
+
+/*TABS*/
+@media(min-width:768px){
+    .ant-tabs-nav-container{
+        margin-top: 10px!important;   
+    }
+    .ant-card-head-title{
+       font-size: 28px; 
+    }
+}
+.ant-tabs-nav-container{
+    margin-top: 15px;   
+}
+.ant-tabs-nav-wrap,.ant-tabs-nav-scroll{
+    height: 40px!important;
+}
+div .ant-tabs-nav .ant-tabs-nav-animated{
+    height: 40px!important;
+}
+.ant-tabs-bar {
+    margin: 0;
+    border-bottom: 1px solid #dddddd;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+    background: #ebebeb;
+    color: black;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+    color: #e47a4a;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    border-right: 1px solid #DDDDDD;   
+    border-left: 1px solid #DDDDDD;   
+    border-top: 1px solid #DDDDDD; 
+    cursor: pointer;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-ink-bar{
+    visibility: visible;
+    background-color:#FD5757;
+}
