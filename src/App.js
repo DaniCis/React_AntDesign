@@ -7,6 +7,7 @@ import './MainLayout.css';
 import './Globales.css';
 import MenuContenido from './Menu';
 import DatosEmpresa from './DatosEmpresa';
+import Componente from './components/Componente';
 
 const { Header, Sider, Content } = Layout;
 
@@ -34,11 +35,11 @@ const showSiderbar =()=>{
             <Navbar  showSiderbar={showSiderbar}/>
           </Header>
           <Content className="site-layout-content">
+            <Componente msg="Hola soy un componente funcional expresado desde una prop"/>
               <Switch>
                 <Route path='/DatosEmpresa' >
                   <DatosEmpresa/>
                 </Route>
-                
               </Switch>
           </Content>
         </Layout>
