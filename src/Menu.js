@@ -36,6 +36,9 @@ const MenuContenido= ({showSiderbar}) => {
             </div>} >
             <SubMenu key="parametros-empresa" className="submenu1" title="Empresa">
                 <Menu.Item key="parametros-empresa-datos-empresa"> 
+                <Link to="/Pruebas">Pruebas</Link>
+                </Menu.Item>
+                <Menu.Item key="parametros-empresa-datos-empresa"> 
                 <Link to="/DatosEmpresa">Datos Empresa</Link>
                 </Menu.Item>
                 <Menu.Item key="parametros-empresa-sucursal">
@@ -63,10 +66,13 @@ const MenuContenido= ({showSiderbar}) => {
                  <div className="Icono">
                      <EyeOutlined/>
                  </div>
-                 <div className="Titulo TituloLargo">
-                    <div>Administración y Monitoreo</div>
+                 <div className="Titulo">
+                    <div>React Básicos</div>
                  </div>
             </div>} >
+            <Menu.Item>
+                <Link to="/Practicas">Prácticas</Link>
+            </Menu.Item>
         </SubMenu>
         <SubMenu className="menuPrincipal" key="contabilidad"  
             title={

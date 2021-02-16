@@ -10,6 +10,7 @@ function Componente(props){
 
 /* 
 CLASES
+//class Componente extends React.Component
 class Componente extends Component{
     render(){
         return(
