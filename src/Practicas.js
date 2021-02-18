@@ -1,5 +1,6 @@
 import React from "react";
 import Componente from './components/Componente';
+import Estado from "./components/Estado";
 import Propiedades from "./components/Propiedades";
 
 const Practicas = () => {
@@ -17,6 +18,8 @@ const Practicas = () => {
             elementoReact={<i>Esto es un elemento react</i>}
             componenteReact={<Componente msg="soy un componente pasado como prop"/>}
         />
+        <hr/>
+        <Estado/>
         </>
     );
 };
