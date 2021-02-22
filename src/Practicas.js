@@ -2,6 +2,7 @@ import React from "react";
 import Componente from './components/Componente';
 import Estado from "./components/Estado";
 import Propiedades from "./components/Propiedades";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
 
 const Practicas = () => {
 
@@ -20,6 +21,8 @@ const Practicas = () => {
         />
         <hr/>
         <Estado/>
+        <hr/>
+        <RenderizadoCondicional/>
         </>
     );
 };
